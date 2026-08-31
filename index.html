@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Friday — a personal AI assistant</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0; padding: 3rem 1.25rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #fbfaf8; color: #23201c;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { background: #16151a; color: #e6e3dd; }
+    a { color: #8fb8ff; }
+    .card { background: #1e1d23; border-color: #2f2d36; }
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 2.1rem; letter-spacing: -0.02em; margin: 0 0 .35rem; }
+  .tag { color: #7b7469; font-size: .95rem; margin: 0 0 2.25rem; }
+  h2 { font-size: 1.1rem; margin: 2.25rem 0 .6rem; letter-spacing: -0.01em; }
+  ul { padding-left: 1.15rem; }
+  li { margin: .3rem 0; }
+  .card {
+    background: #fff; border: 1px solid #e7e3db; border-radius: 10px;
+    padding: 1.1rem 1.3rem; margin: 1.5rem 0;
+  }
+  footer { margin-top: 3rem; font-size: .9rem; color: #7b7469; }
+  footer a { margin-right: 1rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Friday</h1>
+  <p class="tag">A personal AI assistant. Built by one person, used by one person.</p>
+
+  <p>Friday is a self-hosted assistant written in Python. It runs on a Raspberry Pi in its
+  owner's home and uses Anthropic's Claude API for language understanding. It keeps its own
+  memory in a local SQLite database and a set of markdown files on that machine.</p>
+
+  <div class="card">
+    <strong>This is not a commercial product.</strong> Friday is not offered for sale,
+    distribution, or sign-up. There is no hosted service, no user accounts, and no way for
+    anyone else to log in. It exists to assist its single owner.
+  </div>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Answers questions and holds context across conversations</li>
+    <li>Reads and manages its owner's Google Calendar</li>
+    <li>Drafts and sends email on its owner's behalf, when asked</li>
+    <li>Produces daily briefings from the above</li>
+  </ul>
+
+  <h2>Google account access</h2>
+  <p>Friday asks its owner for permission to access their own Google Calendar and to send
+  mail through their own Gmail account. That access is granted by the owner, to the owner's
+  own data, and can be revoked at any time from
+  <a href="https://myaccount.google.com/permissions">Google Account permissions</a>.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this app: <a href="mailto:litsydkamal@gmail.com">litsydkamal@gmail.com</a></p>
+
+  <footer>
+    <a href="./privacy.html">Privacy Policy</a>
+    <a href="./terms.html">Terms of Service</a>
+  </footer>
+</main>
+</body>
+</html>
