@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Friday</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0; padding: 3rem 1.25rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #fbfaf8; color: #23201c;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { background: #16151a; color: #e6e3dd; }
+    a { color: #8fb8ff; }
+    .card { background: #1e1d23; border-color: #2f2d36; }
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 1.9rem; letter-spacing: -0.02em; margin: 0 0 .3rem; }
+  .meta { color: #7b7469; font-size: .92rem; margin: 0 0 2.25rem; }
+  h2 { font-size: 1.08rem; margin: 2.1rem 0 .55rem; letter-spacing: -0.01em; }
+  ul { padding-left: 1.15rem; }
+  li { margin: .3rem 0; }
+  .card {
+    background: #fff; border: 1px solid #e7e3db; border-radius: 10px;
+    padding: 1.1rem 1.3rem; margin: 1.5rem 0;
+  }
+  footer { margin-top: 3rem; font-size: .9rem; color: #7b7469; }
+  footer a { margin-right: 1rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Friday &middot; Last updated 31 August 2026</p>
+
+  <p>Friday is a personal, self-hosted AI assistant operated by a single individual for their
+  own use. It is not a commercial service and has no users other than its owner. This policy
+  describes how it handles data.</p>
+
+  <h2>Who this covers</h2>
+  <p>Friday has exactly one user: its owner and developer, reachable at
+  <a href="mailto:litsydkamal@gmail.com">litsydkamal@gmail.com</a>. No accounts are offered to
+  anyone else and no other person's Google data is accessed.</p>
+
+  <h2>What Google data Friday accesses</h2>
+  <ul>
+    <li><strong>Google Calendar</strong> — to read, create, and update events on the owner's
+    own calendars, so it can answer scheduling questions and manage the owner's day.</li>
+    <li><strong>Gmail (send only)</strong> — to send email that the owner has asked it to send.
+    Friday does not request permission to read, search, or delete the owner's mailbox.</li>
+  </ul>
+
+  <h2>Where the data goes</h2>
+  <ul>
+    <li>Calendar and message data is processed on a Raspberry Pi located in the owner's home.</li>
+    <li>Conversation text and relevant context are sent to <strong>Anthropic's Claude API</strong>
+    for language processing, under Anthropic's own terms and privacy policy.</li>
+    <li>Nothing is sent anywhere else. There is no analytics, no advertising, no telemetry,
+    and no third-party data broker.</li>
+  </ul>
+
+  <h2>What is stored, and for how long</h2>
+  <p>Friday keeps a local memory consisting of a SQLite database and markdown files on the
+  device in the owner's home. These hold conversation history, notes, and an audit log of
+  actions taken. The owner can inspect or delete these files at any time. Nothing is stored
+  on a server operated by anyone else.</p>
+
+  <h2>Data sharing</h2>
+  <p>No data obtained through Google APIs is sold, rented, traded, or shared with any third
+  party, other than the processing described above. It is not used to build advertising
+  profiles, train models, or serve any purpose beyond providing the assistant features the
+  owner asked for.</p>
+
+  <div class="card">
+    <strong>Limited Use.</strong> Friday's use and transfer of information received from Google
+    APIs adheres to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+    User Data Policy</a>, including its Limited Use requirements.
+  </div>
+
+  <h2>Security</h2>
+  <p>OAuth credentials and tokens are stored on the local device and are not committed to any
+  code repository or shared with anyone. Access is tiered: certain actions require explicit
+  confirmation from the owner before Friday performs them, and every action is written to an
+  audit log.</p>
+
+  <h2>Revoking access</h2>
+  <p>The owner may revoke Friday's access to their Google account at any time at
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+  Revoking access immediately ends Friday's ability to read or write any Google data.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the date at the top of this page will be updated.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:litsydkamal@gmail.com">litsydkamal@gmail.com</a></p>
+
+  <footer>
+    <a href="./index.html">Home</a>
+    <a href="./terms.html">Terms of Service</a>
+  </footer>
+</main>
+</body>
+</html>
